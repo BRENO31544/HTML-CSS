@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibe Cósmica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #1c1c3c, #3a0ca3);
+      color: #fff;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 800px;
+      padding: 40px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 40px rgba(0,0,0,0.3);
+      animation: fadeIn 1s ease forwards;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    .glow {
+      text-shadow: 0 0 8px #a0c4ff, 0 0 20px #3a86ff;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      background: #3a86ff;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #5ec5ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="glow">Explore o Universo Interior</h1>
+    <p>
+      Um lugar onde o tempo desacelera, os pensamentos se organizam
+      e a energia do cosmos encontra seu caminho até você.
+      Permita-se sentir, refletir e respirar fundo.
+    </p>
+    <button class="button">Começar Jornada</button>
+  </div>
+</body>
+</html>

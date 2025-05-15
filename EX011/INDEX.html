@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Mídia</title>
+</head>
+<body>
+    <h1>Vamos fazer alguns testes de Mídia</h1>
+    <h2>Imagens</h2>
+    <picture>
+        <source media="(max-width:700px )" srcset="IMAGENS/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="IMAGENS/foto-m.png" type="image/png">
+        <img src="IMAGENS/foto-g.png" alt="imagemfexível">
+    </picture>
+
+    <h1>Vamos falar de Áudio</h1>
+    <h2>Sempre tomar cuidado com direitos autorais</h2>
+
+    <audio controls preload="metadata">
+        <source src="midia/Pajama Party - Jeremy Korpas.mp3" type="audio/mp3">
+        <source src="midia/Pajama Party - Jeremy Korpas.ogg" type="audio/ogg">
+        <source src="midia/Pajama Party - Jeremy Korpas.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue rodar audio <a href="midia/Pajama Party - Jeremy Korpas.mp3"></a> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    
+</body>
+</html>

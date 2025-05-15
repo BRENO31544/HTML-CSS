@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links</h1>
+    <h2>Podemos incluir links com a utilização da Tag &lt;a&gt;</h2>
+    <p>Acesse o link usando o link abaixo sabenso que se trata do link mais básico sem nenhum tipo de atributo </p>
+    <a href="https://www.google.com.br/">Acesse o Google como teste nesta mesma página</a>
+    <p>No próximmo link está adicionado o atributo target usado para definir o tipo de navegação</p>
+    <dl>Navegações "Target"
+        <dt>_blank</dt>
+        <dd>Adiciona um tipo de navegação ao link que abre uma nova janela ao acessa-lo</dd>
+        <a href="https://www.google.com.br/" target="_blank">Acesse o Google em uma nova janela</a>
+    </dl>
+    <hr>
+<h1>Importante citar que por padrão o link é usado no type "_self" que abre o link na mesma janela</h1>
+<p>=> _self -> abre na mesma página e _blank abre em uma página secundária</p> 
+    <hr>
+    <h1>Atributo "rel"</h1>
+    <p>O atributo "rel" deve ser usado para direcionar para um site externo => o próprio link google usado acima pode ser usado com esse atributo. Senedo muito útil também quando há varias páginas dentro de um mesmo site e queremos direcionar a navegação indicando a próxima pg ou a pg anterior</p>
+    <p><a href="https://www.google.com.br/" target="_blank" rel="eexternal" >Acesse Aqui</a></p>
+    <dl>Atributo "rel"
+        <dt>external</dt>
+        <dd>Link Externo</dd>
+        <dt>next</dt>
+        <dd>próxima página</dd>
+        <dt>prev</dt>
+        <dd>página anterior</dd>
+    </dl>
+<h1>Ainda falando de navegação</h1>
+<p>Quando temos um site com várias paginas e pastas e precisamos voltar para uma página localizada dentro de uma <strong>Pasta</strong> anterior,  temos um caminho a ser seguido, sendo ele: "../"nome da pasta" , ou seja a pagina 2 linkada abaixo está uma uma subpasta</p>
+
+<p>
+    Vamos a um exemplo:
+    <a href="pasta2/pg2.html">Clique no link e vá para a próxima página</a>
+</p>
+
+<hr>
+<h1>Links nofollow</h1>
+<p>A ideia desse atributo é voltada ao rankeamento em mecanismos de busca. A o atribuir o "rel="nofollow"" a um link estamos dizendo a um site - "não olhe para o rankeamento dese link". Isso pq o rankeamento do link citado pode não ser benéfico para o meu site ainda que seja é possível que o site citado não queira estar atrelado em sites terceiros.</p>
+<h1>Links dofollow</h1>
+<p>Sendo o contrário do anterior, esse usa o rankeamento atrelado. Importante citar que esse é incluso automaticamente a tag (ainda que não esteja escrito em linhas código) quando não há o atributo nofollow</p>
+<hr>
+<h1>Links de Download</h1>
+<p>"a href = "#"" - essa é foma como podemos sinalizar um link vazio, qua ainda será adicionado um arquivo</p>
+
+<a href="Mapa-Metropolitano.pdf" >mapa do metro</a>
+<p>No link acima, ficamos reféns da vontade do navegador, situação onte o PDF é aberto dentro do próprio navegador sem antes baixa-lo. Para resolver isso temos o atributo "Download="nome do link""</p>
+
+<a href="Mapa-Metropolitano.pdf" download="Mapa-Metropolitano">Mapa do metro</a>
+
+<p>Ainda com esse atributo, dependendo do navegador é possível que o arquivo não seja necessáriamente baixado e nesse caso temos como incluir no arquivo o atributo type. Esse por sua vez serve para "forçar" o link a agir da forma necessidade do usuário uma vez que com a tag type colocada é necessario literalemnte inserir o tipo de arquivo do qual o link se trata. Daí basta inserir um tipo de arquivo específico para PDF; JPG; PNG; XLSX ... e daí por diante. uma forma de descobrir quais são essas "extensões" para cada tipo de arquivo temos o site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank">iana.org </a>com as mais diversas extensões para inserir nessa tag</p>
+
+<p>* Uma forma de encontrar informações nessa pagina mais rápido é usando as teclas ctrl + F e digitanto a media type desejada</p>
+
+<p>Uma vez com a type do arquivo devidamente colocada, conseguimos baixar o arquivo</p>
+<a href="Mapa-Metropolitano.pdf"  download="mapa" type="application/pdf">Baixe o mapa do Metro
+</a>
+
+<h2>Segue alguns dos Media Types mais usados</h2>
+<img src="Captura de tela 2025-04-12 054418.png" alt="">
+
+
+
+<hr>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        body {
+            text-transform: capitalize;
+        }
+        header {
+            padding: 10px;
+            border: 0px 0px 0px 0px;
+            border-style: solid;
+            border-color: black;
+            background-color: beige;
+
+        }
+
+        main{
+            font-size: 50px;
+            text-align: center;
+        }
+
+        h1{
+            display: inline;
+            text-align: left;
+            font-size: 50px;
+            width: 50px;
+        }
+
+        nav{
+            height: 40px;
+            font-size: 30px;
+            text-align: center;
+            margin: 30px 0 0 0;
+            border-style: solid;
+            width: auto;
+        }
+        main{
+            height: 800px;
+            border-style: solid;
+        }
+
+        section {
+            margin: 20px 20px 20px 20px ;
+            border-style: solid;
+            height: 750px;
+            width: 1050px;
+        }
+
+        article{
+            margin: 40px 20px 20px 20px ;
+            font-size: 50px;
+            text-align: left    ;
+            border-style: solid;
+            height: 300px;
+        }
+
+        .aside1{
+            margin: 20px 20px 20px 20px ;
+            float: right;
+            font-size: 30px;
+            text-align: center;
+            border-style: solid;
+            width: 250px;
+            height: 280px;
+            position: relative;
+            top: -170px;
+            right: 5px;
+        }
+
+        .aside2{
+            margin: 20px 20px 20px 20px ;
+            border-style: solid;
+            position: relative;
+            top: -775px;
+            left: 1060px;
+            height: 750px;
+            width: 400px;
+        }
+
+        footer{
+            border-style: solid;
+            height: 100px;
+            text-align: center;
+            font-size: 100px;
+            text-align: right;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>Links Aqui; Links Aqui; Links Aqui;Links Aqui</nav>
+    </header>
+    <main>
+        <section>Section
+            <article>
+               <p>article</p>
+            </article>
+                
+            <article>
+                <p>article</p>
+                <aside class="aside1">
+                    Aside
+                </aside>
+            </article>
+        </section>
+        <aside class="aside2">
+            Aside
+        </aside> 
+    </main>
+    <footer>
+       footer
+    </footer>
+</body>
+</html>
