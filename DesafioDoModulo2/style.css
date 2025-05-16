@@ -45,7 +45,7 @@ main{
 }
 
 h1{
-    text-align: left;
+    text-align: center;
     color: var(--verdeforte );
     margin: 5px;
     font-family: 'android';
@@ -97,7 +97,7 @@ a:hover{
 }
 
 h2{
-    text-align: left;
+    text-align: center;
     color: var(--verdeforte);
     background-image: linear-gradient(to right, #37C878,#82E0AC,white);
     margin: 5px;
