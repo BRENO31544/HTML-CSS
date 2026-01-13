@@ -12,10 +12,12 @@
 </head>
 <body>
     <h1>Meu primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off"> 
+    <form action="cadastro.php" autocomplete="off" method="post"> 
         <!--Tudo oq é fomulário deve estar dentro dessa tag-->
         <!--action = cód que liga a uma linguagem de programação externa que será usada no site (nesse caso php)-->
         <!--autocomplete="off" desliga aquela função que os sites têm de sugerir nomes no formulário-->
+        <!--O method "post" faz com que os dados inseridos nos campos do formulário fiquem um pouco mais escondidos, esses dados não serão acessíveis mais na URL do site-->
+        <!--Outra opção de method possível é a "padrão" GET que faz com que os dados apareçãm na URL do site após o envio do formulário; get só pode ser enviado até 3000 bytes, também não serve para imagens que precisem ser enviadas pelo formulário,não é aconselhável o uso em caso de dados sensíveis devido a visibilidade desses na URL-->
         <p><label for="inome">Nome:</label> <input type="text" name="nome"  id="inome"></p> 
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="nome" id="isobrenome"></p>
         <!--"input" insere o campo de fomulário a ser preenchido; type (nesse caso "text") é o tipo de dado que será inserido--> 
